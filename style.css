@@ -1,0 +1,229 @@
+/*Cambiar el background de la página*/
+body{
+    /* color de fondo*/
+    background-color:#f8edeb;
+    /* color de texto */
+    color: #000000;
+    /*fuente del texto*/
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 400;
+        /* Borde gráfico: ancho estilo color */
+}
+
+h1{
+    color: #3a3a27;
+    font-family: 'Lobster', cursive;
+    /*font-family: 'Titan One', cursive;*/
+    text-align: center;
+    font-size: 80px;
+    margin: 0%;
+}
+
+h4{
+    color: #7d858a;
+    font-family: 'Lobster', cursive;
+    /*font-family: 'Titan One', cursive;*/
+    text-align: center;
+    font-size: 30px; 
+    margin: 0%;
+}
+
+h3{
+    color: #4a5358;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+img{
+    /*width->ancho del objeto/ heigth -> altura del objeto */
+    width: 350px; /*se recomienda sólo usar una para no deformar*/
+
+}
+
+/*Clases (class) siempre llevan . antes del nombre*/
+
+/*-------------------------------------------------------------------------------------------------*/
+header{
+    margin: 0;
+    width: 100%;
+    background-color: #7d7d7b;
+    background-size: contain;
+}
+
+header .Subtitulo{
+    text-decoration-line: overline;
+    padding: 10px;
+    color: #ced8de;
+}
+
+header .menu a{
+    justify-content: center;
+    padding: 10px;
+    color: #f1f3f6;
+    text-decoration-line: none;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+header .menu{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    background-size: contain;
+}
+/*----------------------------------------------------------------------------------------------------*/
+main .Parte-A .Inicio{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 12px;
+    padding: 20px;
+    font-family: 'Lobster', cursive;
+    /*font-family: 'Parisienne', cursive;*/
+    font-size: 65px;
+    color: #5a5b5e;
+    text-decoration-line: none;
+}
+
+main .Parte-A{
+    display: flex;
+    margin: 35px;
+    justify-content: space-around;
+}
+
+main .Parte-A img{
+    background-color: #b8aa9c;
+    box-shadow: 0 1px 6px #20212447;
+    border-radius: 100%;
+    border-width: 400px;
+    border-right: 400px;
+    padding: 12px;
+    border: 1px solid #dadce0;
+    color:#202124;
+}
+
+main .recomendados{
+    background-color: #c0a4cc;
+    padding: 55px;
+}
+
+main .recomendados .Re_c{
+    background-color: #806c89;
+    box-shadow: 0 1px 6px #20212447;
+    border-radius: 10%;
+    border: 1px solid #806c89;
+    padding: 20px;
+}
+
+main .recomendados .Rec_t{
+    color:#494b36;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    margin-left: 5%;
+    padding: 15px;
+    text-decoration-line:underline;
+}
+
+main h5{
+    font-family: 'Lobster', cursive;
+    display: flex;
+    margin-left: 5%;
+    text-decoration-line:underline;
+}
+
+main .recomendados .lista_re img{
+    background-color: #b8aa9c;
+    box-shadow: 0 1px 6px #20212447;
+    width: 150px;
+    height: 200px;
+    border-radius: 10%;
+    border-width: 400px;
+    border-right: 400px;
+    margin: 40px;
+    padding: 5px;
+    align-items: center;
+    border: 1px solid #dadce0;
+    color:#202124;
+}
+
+main .recomendados .lista_re{
+    display: flex;
+    list-style: none;
+}
+
+main .Tablita{
+    background-color: #c0a4cc;
+    padding: 30px;
+    margin-top: 15px;
+}
+
+main .Tablita .Ventas_C{
+    background-color: #806c89;
+    box-shadow: 0 1px 6px #20212447;
+    border-radius: 10%;
+    border: 1px solid #806c89;
+    padding: 20px;
+}
+
+main .Tablita .ventas_T{
+    color:#494b36;
+    font-family: 'Lobster', cursive;
+    text-decoration-line:underline;
+}
+
+main .Tablita .ventas{
+    display: flex;
+    list-style: none;
+}
+
+main .Tablita img{
+    background-color: #b8aa9c;
+    box-shadow: 0 1px 6px #20212447;
+    width: 150px;
+    height: 200px;
+    border-radius: 10%;
+    border-width: 400px;
+    border-right: 400px;
+    margin: 40px;
+    padding: 5px;
+    align-items: center;
+    border: 1px solid #dadce0;
+    color:#202124;
+    text-decoration-line:underline;
+}
+
+main .Fantasia{
+    margin: 30px;
+}
+
+main .Fantasia img{
+    height: 325px;
+}
+
+main .Fantasia ul{
+    display: flex;
+    list-style: none;
+    margin: 30px;
+}
+
+main .Fantasia li{
+    margin-left: 30px;
+}
+
+main .Reco{
+    background-color: #a68cb3;
+    box-shadow: 0 1px 6px #20212447;
+    border-radius: 10%;
+    padding: 20px;
+    margin:60px ;
+}
+
+main .Reco h5{
+    margin: 40px;
+}
+
+main .En_B{
+    margin: 9px;
+}

@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- Información al navegador-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BookFriend </title>
+    <!-- Conexión con CSS- hoja de estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700&family=Lobster&family=Parisienne&family=Titan+One&display=swap" rel="stylesheet">
+</head>
+<body><!-- BODY - Todo lo que ve el usuario -->
+    <header>
+        <h1 class="Titulo">Book Friend</h1> <!--src=fuente-->
+        <h4 class="Subtitulo">Un gran poder conlleva un buen libro</h4>
+        <div class="menu">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">BookFriend</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item dropdown">
+                        <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Fantasía
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a href="#fantasia"> ¿Qué es la fantasía literaria? </a></li>
+                            <li><a class="dropdown-item" href="#fantasias r"> Reseñas </a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Novelas
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a href="#novelas"> ¿Qué es una novela literaria? </a></li>
+                            <li><a class="dropdown-item" href="#novelas_r"> Reseñas </a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Terror
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a href="#terror"> ¿Qué es la Terror literario? </a></li>
+                            <li><a class="dropdown-item" href="#terror r"> Reseñas </a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Académico
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a href="#academico"> ¿Qué es un libro académico? </a></li>
+                            <li><a class="dropdown-item" href="#academico r"> Reseñas </a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ciencia ficción
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a href="#ciencia-ficcion"> ¿Qué es un libro de ciencia ficción? </a></li>
+                            <li><a class="dropdown-item" href="#cienciaf r"> Reseñas </a></li>  
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Teatro
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a href="#teatro"> ¿Qué es el teatro literario? </a></li>
+                            <li><a class="dropdown-item" href="#teatro r"> Reseñas </a></li>  
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Misterio
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a href="#misterio"> ¿Qué es el misterio literario? </a></li>
+                            <li><a class="dropdown-item" href="#misterio r"> Reseñas </a></li> 
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mangas y Cómics
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a href="#mangas-comics"> ¿Qué son los mangas y qué son los cómics </a></li>
+                            <li><a class="dropdown-item" href="#man_com r"> Reseñas </a></li> 
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <main>
+        <div class="Parte-A">
+            <img class="Img-1" src="https://cdn-icons-png.flaticon.com/512/4524/4524556.png" alt="">
+            <p class="Inicio">Un nuevo mundo de lo que más te guste.</p>
+            <!-- etiqueta pasara sólo modificar la imagen-->
+            <img class="libros_fant" src="/images/7273751.png" alt="">
+        </div>
+        <!-- LISTAS -->
+        <section class="recomendados">
+            <div class="Re_c">
+                <h3 class="Rec_t"> RECOMENDADOS </h3>
+                <h5> Lista hecha por Tecnolochicas PRO </h5>
+                <!-- "p"-> parrafo -->
+                <!-- "ol"-> listas ordenadas -->
+                <ul class="lista_re">
+                    <li> <img src="./images/Dejad_niños.jpg" alt="Dejad a los Niños."> </li>
+                    <li> <img src="./images/IT.jpg" alt="It - Stephen King."> </li>
+                    <li> <img src="./images/sabueso.jpg" alt="El sabueso de los baskerville - Arthur Conan Doyle."> </li>
+                    <li> <img src="./images/Calculo_var.jpg" alt="Calculo de Variables - Janes Stewart."></li>
+                    <li> <img src="./images/Franki.jpg" alt="Frankenstein - Mary Shelley."> </li>
+                </ul>
+            </div>
+        </section>
+        <!-- ÍNDICE-->
+        <!-- "a"-> elemento ancla: crea enlaces a otras páginas-->
+        <!-- "div"-> división: agrupa contenido -->
+        <div class="Tablita">
+            <div class="info clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="Ventas_C">
+                                <h3 class="ventas_T"> Best Sellers </h3>
+                                <!-- "ul" -> lista no ordenada// Unorders list -->
+                                <ul class="ventas">
+                                    <a href="https://www.amazon.com/Outlive-Longevity-Peter-Attia-MD/dp/0593236599"><li> <img src="/images/1.jpg" alt=""></li></a>
+                                    <a href="https://www.amazon.com/Wager-Tale-Shipwreck-Mutiny-Murder/dp/0385534264"><li> <img src="/images/2.jpg" alt="The Mager: A Tale of Shipwreck, Mutiny and Murder. "></li></a>
+                                    <a href="https://www.amazon.com.mx/Assistant-Villain-Hannah-Nicole-Maehrer/dp/1649375808?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1G99GVHAT2WD8"><li> <img src="/images/3.jpg" alt="Assistant to the Villain  "></li></a>
+                                    <a href="https://www.amazon.com.mx/Romper-el-c%C3%ADrculo-Colleen-Hoover/dp/6070788117"><li> <img src="/images/4.jpg" alt="Romprer el circulo "></li></a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="card" style="width: 20rem;">
+                                <div class="card-header">
+                                  <h5> Pero...,¿Qué estoy leyendo? </h5>
+                                </div>
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" id="fantasia">
+                                                Fantasía
+                                            </button>
+                                        </h3>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                El género fantástico plantea escenarios sobrenaturales y extraordinarios que rompen con la realidad establecida.
+                                                <ul>
+                                                    <li>La mayoría es narrativa.</li>
+                                                    <li>Contiene elementos sobrenaturales o inexplicables, es decir, que rompen con la realdad.</li>
+                                                    <li>Aparición de criaturas fantásticas.</li>
+                                                    <li>A menudo se dejan de lado las leyes de la física.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" id="novelas">
+                                                Novelas
+                                            </button>
+                                        </h3>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Una novela es una escritura creativa de ficción escrita para cautivar y entretener a un lector utilizando varias habilidades comunes y poéticas. Es un libro escrito en forma ficticia y narrativa para el disfrute del lector. Una novela se escribe principalmente para el entretenimiento y la expresión del punto de vista del escritor. </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" id="terror">
+                                                Terror
+                                            </button>
+                                        </h3>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                Un genero de ficción literario cuyo objetivo es causar miedo, asustar y aterrorizar a los lectores. Según la define J. A. Cuddon, historiador literario, se trata de «una ficción en prosa de longitud variable […] que sacude o también asusta el lector, o tal vez induce una sensación de repulsión o aversión».
+                                                <ul>
+                                                    <li>Creación de una atmósfera inquietante.</li>
+                                                    <li>A menudo hay un factor sobrenatural.</li>
+                                                    <li>Cultivo del miedo y emociones asociadas.</li>
+                                                    <li>Suceso sorprendente, a menudo, sin explicación inmediata, relacionado con algo esencial para el ser humano.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour" id="academico">
+                                                Académico
+                                            </button>
+                                        </h3>
+                                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">El ámbito académico es el espacio donde surge la teorización literaria de un modo sistemático a través de la publicación de artículos en revistas literarias especializadas. Allí se critican y renuevan dichas teorías a través del intercambio, lectura y crítica de los modelos en constante revisión, aplicación y transformación.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive" id="ciencia-ficcion">
+                                                Ciencia Ficción
+                                            </button>
+                                        </h3>
+                                        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                La ciencia ficción es uno de los géneros de más éxito junto a la fantasía (y también es uno de mis favoritos). Se trata de un género especulativo que relata acontecimientos desarrollados, en principio, en un marco imaginario y cuya verosimilitud se fundamenta con las ciencias físicas, naturales y sociales.
+                                                <ul>
+                                                    <li>Creación de una atmósfera inquietante.</li>
+                                                    <li>A menudo hay un factor sobrenatural.</li>
+                                                    <li>Cultivo del miedo y emociones asociadas./li>
+                                                    <li>Suceso sorprendente, a menudo, sin explicación inmediata, relacionado con algo esencial para el ser humano.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix" id="teatro">
+                                                Teatro
+                                            </button>
+                                        </h3>
+                                        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body"> Es un género literario que tiene como finalidad la representación escénica ante un público. Combina rasgos literarios (texto) y elementos característicos del espectáculo, ya que requiere escenografía, actores, etc. El teatro se expresa básicamente mediante el diálogo. Suele plantear un conflicto que subordina todos los otros elementos de la obra; esa tensión dramática se resuelve al final de la pieza, en el desenlace o resolución. </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven" id="misterio">
+                                                Misterio
+                                            </button>
+                                        </h3>
+                                        <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">La literatura de misterio, también conocida como ficción de detectives y novelas de crimen, es un tipo específico de historia de suspenso. Las historias de misterio comienzan con un crimen como el conflicto central y presentan pistas y sospechosos a lo largo de la historia para permitir una resolución final a través de la deducción lógica. La mayoría de los misterios incluyen un detective profesional o amateur que guía al lector a través de la solución del crimen. En algunos casos, los lectores son presentados con suficiente evidencia para resolver correctamente el misterio ellos mismos; En otros, deben seguir junto con los personajes hasta la revelación final al final de la historia. Aunque es posible que un misterio sea un trabajo de no ficción, la mayoría de los misterios literarios son ficticios.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight" id="mangas-comics">
+                                                Mangas y Comics
+                                            </button>
+                                        </h3>
+                                        <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                            <h5>Manga</h5>
+                                            El manga es una forma de cómic y novela gráfica originaria de Japón. La palabra manga proviene de dos palabras japonesas: “man”, que significa “caprichoso o improvisado”, y “ga”, que se traduce como “dibujos”.
+                                            El manga suele publicarse en capítulos semanales o mensuales que luego aparecen por entregas en grandes revistas de manga. Colectivamente, estos capítulos de manga se publican juntos como volúmenes tankōbon, a menudo libros de tapa blanda que se pueden comprar en librerías o tiendas de manga.
+                                            <h5>Cómics</h5>
+                                            Un cómic es un relato explicado mediante viñetas o recuadros que contienen ilustraciones. Algunas o todas las viñetas pueden contener, además, un texto más o menos breve. Esta definición simple explica por qué se considera un formato tan versátil: el uso creativo que podemos darle a las viñetas, las ilustraciones, las palabras y los recursos que veremos más adelante, demuestran que es imposible agotar sus posibilidades.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="Fantasia">
+            <h3 id="fantasias r"> FANTASIA </h3>
+            <ul>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/1.F.jpg" class="card-img-top" alt="La Tierra Fragmentada">
+                        <div class="card-body">
+                            <h5 class="card-title">La Tierra Fragmentada</h5>
+                            <p class="card-text">La Tierra Fragmentada narra la historia de un mundo llamado la Quietud, donde se producen cataclismos periódicos llamados estaciones que amenazan con destruir la civilización. En este mundo, hay personas con el poder de controlar la tierra, los orogenes, que son temidos y odiados por el resto.  Es una obra original, compleja y emocionante que explora temas como la identidad, la opresión, la resistencia y la esperanza.</p>
+                            <a href="https://www.amazon.com.mx/quinta-estaci%C3%B3n-Tierra-Fragmentada-Premio-ebook/dp/B072DWN7CM" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/2.F.jpg" class="card-img-top" alt="Asesino real">
+                        <div class="card-body">
+                            <h5 class="card-title">Asesino real</h5>
+                            <p class="card-text">El protagonista de esta trilogía es Traspié Hidalgo Vatídico, el hijo bastardo del príncipe heredero de los Seis Ducados, un reino asediado por unos piratas que convierten a la gente en zombis. Traspié tiene dos dones mágicos: la Habilidad, que le permite comunicarse telepáticamente con otros miembros de la familia real, y el Arte del Lazo, que le permite vincularse con animales.
+                            </p>
+                            <a href="https://www.amazon.com.mx/Asesino-real-Robin-Hobb/dp/8490623120" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/3.F.jpg" class="card-img-top" alt="El nombre del viento ">
+                        <div class="card-body">
+                            <h5 class="card-title">El nombre del viento</h5>
+                            <p class="card-text">Mendigo, ladrón, mago, músico, héroe y asesino, Kvothe es el corazón de esta saga fantástica escrita entre dos tiempos: la leyenda y la propia narración de Kvothe, en la que se está cociendo el último capítulo de su historia. Se trata en total de una trilogía, de la que de momento solo han visto la luz los dos primeros libros: El nombre del viento y El temor de un hombre sabio. 
+                            </p>
+                            <a href="https://www.amazon.com.mx/Nombre-del-Viento-Name-Wind/dp/8499082475" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/4.F.jpg" class="card-img-top" alt=" Jonathan Strange y el señor Norrell ">
+                        <div class="card-body">
+                            <h5 class="card-title"> Jonathan Strange y el señor Norrell</h5>
+                            <p class="card-text">Mendigo, ladrón, mago, músico, héroe y asesino, Kvothe es el corazón de esta saga fantástica escrita entre dos tiempos: la leyenda y la propia narración de Kvothe, en la que se está cociendo el último capítulo de su historia. Se trata en total de una trilogía, de la que de momento solo han visto la luz los dos primeros libros: El nombre del viento y El temor de un hombre sabio. 
+                            </p>
+                            <a href="https://www.amazon.com.mx/Jonathan-Strange-Norrell-Susanna-Clarke/dp/8478889736" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="Fantasia">
+            <h3 id="novelas_r"> NOVELAS </h3>
+            <ul>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/1.N.jpg" class="card-img-top" alt="Cien años de soledad">
+                        <div class="card-body">
+                            <h5 class="card-title">Cien años de soledad</h5>
+                            <p class="card-text">La novela del escritor colombiano que narra las vicisitudes de la familia Buendía a lo largo de siete generaciones en el ficticio pueblo de Macondo es considerado por muchos la mejor novela de todos los tiempos. Referente del boom latinoamericano y abanderado del realismo mágico, esta obra, publicada en 1967, para muchos debería encabezar el ranking.</p>
+                            <a href="https://www.amazon.com.mx/Cien-soledad-Gabriel-Garc%C3%ADa-M%C3%A1rquez/dp/6070728793" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/2.N.jpg" class="card-img-top" alt="El Conde de Montecristo">
+                        <div class="card-body">
+                            <h5 class="card-title">El Conde de Montecristo</h5>
+                            <p class="card-text">La clásica novela de aventuras que aparece en todas las listas. El autor de Los tres mosqueteros, escribió en 1844 esta novela que se publicó por entregas y que cuenta la historia de Edmundo Dantés, marinero que debido a una traición acaba en prisión de la que conseguirá escapar para convertise en el conde del título.
+                            </p>
+                            <a href="https://www.amazon.com.mx/El-conde-Montecristo-Alejandro-Dumas/dp/8494277863" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/3.N.jpg" class="card-img-top" alt="Crimen y castigo">
+                        <div class="card-body">
+                            <h5 class="card-title">Crimen y castigo</h5>
+                            <p class="card-text"> Publicada en 1866, la novela de Dostoievski es considerada una de las cumbres de la literatura rusa. El análisis psicológico que realiza del protagonista, el estudiante Rodión Raskólnikov, que se enfrenta a un dilema moral. Es capaz de justificar humanitariamente un crimen, pero que al cometerlo verá cómo lo persigue la culpa.
+                            </p>
+                            <a href="https://www.amazon.com.mx/Nombre-del-Viento-Name-Wind/dp/8499082475" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/4N.jpg" class="card-img-top" alt="La Divina comedia ">
+                        <div class="card-body">
+                            <h5 class="card-title"> La Divina comedia</h5>
+                            <p class="card-text">Dividido en cánticas (Infierno, Purgatorio y Paraíso), Dante, Beatriz y Virgilio protagonizan este poema que resume los conocimientos desde la civilización clásica a la medieval, las creencias o la filosofía. Dante escribió este libro en las primeras décadas de 1300 y que ha llegado hasta nuestros días considerada como una de las obras maestras de la literatura y ha servido como referente a multitud de creadores de todas las épocas.
+                            </p>
+                            <a href="https://www.amazon.com.mx/Divina-Comedia-Prologo-critica-historico/dp/6071411394/ref=asc_df_6071411394/?tag=gledskshopmx-20&linkCode=df0&hvadid=547159750440&hvpos=&hvnetw=g&hvrand=3471324977022868578&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9136619&hvtargid=pla-1637674690934&psc=1" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="Fantasia">
+            <h3 id="terror r"> Terror </h3>
+            <ul>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/1.Te.jpg" class="card-img-top" alt="Dispersión">
+                        <div class="card-body">
+                            <h5 class="card-title">Dispersión</h5>
+                            <p class="card-text">Una novela al mismo tiempo compasiva y extraña, narrada con una prosa austera e hipnótica, mucho más que una novela de terror psicológico, ya que también aborda temas como la soledad en la tercera edad, el trauma y la propia identidad.Reid nos cuenta la historia de Penny, una anciana que vive sola, sufre un accidente doméstico y cuando despierta se encuentra en la residencia Seis Cedros.</p>
+                            <a href="https://www.amazon.es/dp/B0BL88XTTM" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/2.Te.jpg" class="card-img-top" alt="Tragedia en villa Rosato: Hay lugares que nunca dejamos atrás">
+                        <div class="card-body">
+                            <h5 class="card-title">Tragedia en villa Rosato</h5>
+                            <p class="card-text"> La Villa Aestas en Orvieto, fue escenario en 1974 de un verano que cambió vidas. La estrella de rock Noel Gordon alquila la villa buscando inspiración. Su invitado, el músico Pierce Sheldon, se une con su novia Mari y su hermanastra Lara, desencadenando eventos que culminan en el asesinato de Pierce.
+                            Emily investiga el pasado y sospecha que el asesinato fue más que excesos. 
+                            </p>
+                            <a href="https://www.amazon.es/dp/8419030538" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/3.Te.jpg" class="card-img-top" alt="La casa de las sombras">
+                        <div class="card-body">
+                            <h5 class="card-title">La casa de las sombras</h5>
+                            <p class="card-text"> Catherine, tras superar un despedido injusto y el acoso en una cadena televisiva en Londres, comienza de nuevo. Le ofrecen catalogar la singular colección de muñecas y títeres antiguos de M.H. Mason, con representaciones sangrientas de la Gran Guerra. La novela explora la lucha de Catherine por enfrentar su pasado y descubrir horrores inimaginables.
+                            </p>
+                            <a href="https://www.amazon.es/dp/8445014889" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/4.Te.jpg" class="card-img-top" alt="Mi esposa y yo compramos un rancho">
+                        <div class="card-body">
+                            <h5 class="card-title">Mi esposa y yo compramos un rancho</h5>
+                            <p class="card-text">Es una novela a dos voces, escrita por dos hermanos. Narra la historia de una joven pareja, Harry y Sasha, y su perro, Dash, que dejan la bulliciosa ciudad para vivir en la casa de sus sueños, situada en una de las regiones más pintorescas del estado de Wyoming. Una noche de primavera, empieza una serie de acontecimientos que les harán dudar de todo lo que hasta ahora creían conocer. 
+                            </p>
+                            <a href="https://www.amazon.es/dp/8408267515" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="Fantasia">
+            <h3 id="academico r"> Académico </h3>
+            <ul>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/1.Aca.jpg" class="card-img-top" alt="Diseño de sistemas interactivos centrados en el usuario">
+                        <div class="card-body">
+                            <h5 class="card-title">Diseño de sistemas interactivos centrados en el usuario</h5>
+                            <p class="card-text">Esta obra se enmarca en el contexto de la disciplina conocida con el nombre de Interacción persona-ordenador (IPO), la cual está relacionada con el diseño, la evaluación y la implementación de sistemas interactivos para que sean utilizados por personas, y con el estudio de los fenómenos más importantes con los que está relacionada.</p>
+                            <a href="https://www.amazon.com.mx/Dise%C3%B1o-sistemas-interactivos-centrados-usuario/dp/8497883209" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/2.Aca.jpg" class="card-img-top" alt="Álgebra Superior">
+                        <div class="card-body">
+                            <h5 class="card-title">Álgebra Superior</h5>
+                            <p class="card-text"> El libro está formado por cinco capítulos, en cada uno de ellos se presentan los conceptos teóricos de la manera más sencilla posible, buscando facilitar su comprensión, pero sin perder formalidad y rigor matemático. Se incluyen también una gran cantidad de ejercicios resueltos donde se explica, en forma detallada, cada uno de los pasos realizados en la resolución del problema.
+                            </p>
+                            <a href="http://www.ptolomeo.unam.mx:8080/xmlui/handle/RepoFi/18592" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/3.Aca.jpg" class="card-img-top" alt="Matemáticas avanzadas para ingeniería">
+                        <div class="card-body">
+                            <h5 class="card-title">Matemáticas avanzadas para ingeniería</h5>
+                            <p class="card-text"> Esta séptima edición de Matemáticas avanzadas para ingeniería difiere de la edición anterior en varias medidas. Si bien respeta el orden ya clásico del volumen, esta edición hace mayor énfasis en la construcción y análisis de modelos, en la utilización de ecuaciones diferenciales ordinarias y parciales, de transformadas integrales y de funciones especiales.
+                            </p>
+                            <a href="https://dclearningstore.com/producto/matematicas-avanzadas-para-ingenieria-ebook/" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/4.Aca.jpg" class="card-img-top" alt="Chemical Engineering">
+                        <div class="card-body">
+                            <h5 class="card-title">Chemical Engineering</h5>
+                            <p class="card-text">Este volumen de la serie de ingeniería química de Coulson y Richardson contiene soluciones completas a los problemas de los volúmenes 2 y 3. Si bien los volúmenes principales contienen ejemplos ilustrativos elaborados a lo largo del texto, este libro y su compañero de la serie, contiene las respuestas a las preguntas más desafiantes planteadas en la sección de problemas del texto principal.
+                            </p>
+                            <a href="https://www.amazon.com.mx/Coulson-Richardsons-Chemical-Engineering-5/dp/0750626127" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="Fantasia">
+            <h3 id="cienciaf r">Ciencia Ficción</h3>
+            <ul>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/1.Ci.jpg" class="card-img-top" alt="Fahrenheit 451">
+                        <div class="card-body">
+                            <h5 class="card-title">Fahrenheit 451</h5>
+                            <p class="card-text">Perfecta para cerrar la trilogía de distopías clásicas junto a '1981' y 'Un mundo feliz', y una de las obras clave del genial Ray Bradbury. Presenta un futuro en el que los bomberos no apagan fuegos, sino que los generan, quemando los libros, que están prohibidos. Uno de estos bomberos se une a un grupo de resistencia que memoriza los clásicos de la literatura para evitar que se pierdan.</p>
+                            <a href="https://libreria-ditesa.com/fahrenhet-451-edic-escolar-9786073110440" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/2.Ci.jpg" class="card-img-top" alt="Soy leyenda">
+                        <div class="card-body">
+                            <h5 class="card-title">Soy leyenda</h5>
+                            <p class="card-text"> Un clásico de altísima gradación, que aún hoy asombra por el impacto que ha tenido en la cultura popular muchas de sus ideas. Para empezar, la idea del superviviente a un apocalipsis en forma de plaga, un tropo que aquí se ve acentuado por la angustia del protagonista de desconocer por qué él ha sobrevivido. 
+                            </p>
+                            <a href="https://www.amazon.com.mx/Soy-Leyenda-Richard-Matheson/dp/8445074334/ref=asc_df_8445074334/?tag=gledskshopmx-20&linkCode=df0&hvadid=295496505296&hvpos=&hvnetw=g&hvrand=10751272595356879337&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9136619&hvtargid=pla-521941134446&psc=1" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/3.Ci.jpg" class="card-img-top" alt="Matadero Cinco">
+                        <div class="card-body">
+                            <h5 class="card-title">Matadero Cinco</h5><p> Este clásico antibélico roza la ciencia-ficción como roza muchos otros géneros, lo que no deja de ser habitual en la inclasificable obra de Vonnegut. Seguiremos la vida de Billy Pilgrim, desde sus experiencias en la 2ª Guerra Mundial a sus viajes en el tiempo después del conflicto, con visitas al planeta Trafaldamore, donde sus habitantes ven las cuatro dimensiones.
+                            </p>
+                            <a href="https://www.amazon.com.mx/Slaughterhouse-Five-Graphic-Novel-Ryan-North/dp/1684156254/ref=asc_df_1684156254/?tag=gledskshopmx-20&linkCode=df0&hvadid=451083935977&hvpos=&hvnetw=g&hvrand=5304524629552302995&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9138746&hvtargid=pla-947861073524&psc=1" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="./images/4.Ci.jpg" class="card-img-top" alt="Ubik">
+                        <div class="card-body">
+                            <h5 class="card-title">Ubik</h5>
+                            <p class="card-text">El punto de partida de 'Ubik' es el de un técnico implicado en una enrevesada trama de espionaje corporativo y poderes psíquicos que entra en contacto con una sustancia que puede revertir las alteraciones en la realidad. Una laberíntica y progresiva pérdida de contacto con lo tangible hará preguntarse al lector qué demonios es real y cómo estar seguro de absolutamente nada.
+                            </p>
+                            <a href="https://www.amazon.com.mx/Ubik-Philip-K-Dick/dp/6070770838?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=AVDBXBAVVSXLQ" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="Fantasia">
+            <h3 id="teatro r">Teatro</h3>
+            <ul>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/1.Tr.jpg" class="card-img-top" alt="Casa de Muñecas- Henrik Ibsen">
+                        <div class="card-body">
+                            <h5 class="card-title">Casa de Muñecas </h5>
+                            <p class="card-text">Nora se cree felizmente casada con Torvaldo. Llevan ocho años de casados y tienen tres hijos. Además, Torvaldo Helmer asumirá en el año nuevo el puesto de director de un banco. Todo parece perfecto, pero Nora guarda un secreto. Así se lo confiesa a su amiga Linde. Años atrás, su esposo estaba a punto de morir. Debía cambiar de clima, pero económicamente les era imposible pagar un viaje. </p>
+                            <a href="https://www.buscalibre.com.mx/libro-casa-de-munecas-la-dama-del-mar-henrik-ibsen-austral/9788467036169/p/4233530" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/2.Tr.jpg" class="card-img-top" alt="Fausto">
+                        <div class="card-body">
+                            <h5 class="card-title">Fausto</h5>
+                            <p class="card-text"> Los mejores libros jamás escritos. Nada tenía y, sin embargo, tenía lo suficiente: el afán de saber la verdad y el placer por el engaño.Este poema dramático, inspirado en una leyenda medieval, narra la historia de Fausto, sabio anciano que, en el ocaso de su existencia, establece un pacto con Mefistófeles, a quien entrega su alma a cambio dela juventud.
+                            </p>
+                            <a href="https://www.amazon.com.mx/FAUSTO-JOHANN-WOLFGANG-VON/dp/6070755766/ref=asc_df_6070755766/?tag=gledskshopmx-20&linkCode=df0&hvadid=358349522800&hvpos=&hvnetw=g&hvrand=16537035083527964926&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9136619&hvtargid=pla-774824969759&psc=1" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/3.Tr.jpg" class="card-img-top" alt="Otelo- William Shakespeare">
+                        <div class="card-body">
+                            <h5 class="card-title">Otelo </h5><p> La historia original del moro de Venecia, de Gianbattista Giraldi Cinthio (1565), sirvió a William Shakespeare para crear Otelo, la única de sus grandes tragedias basada en una obra de ficción. Contraviniendo la imagen isabelina del moro, Shakespeare invierte los papeles de los protagonistas y otorga al moro Otelo el carácter de hombre noble y aristocrático.
+                            </p>
+                            <a href="https://www.gandhi.com.mx/otelo-12" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="./images/4.Tr.jpg" class="card-img-top" alt="Una trilogía rural">
+                        <div class="card-body">
+                            <h5 class="card-title">Una trilogía rural</h5>
+                            <p class="card-text">Una joya. Elvira Lindo (sobre Federico)La tragedia de la pasión amorosa, las rivalidades familiares, la esterilidad, la represión sexual y la muerte son el hilo vertebrador de Bodas de sangre, Yerma y La casa de Bernarda Alba, las tres obras que conforman el ciclo por el que Federico García Lorca ha sido más celebrado como dramaturgo.
+                            </p>
+                            <a href="https://www.gandhi.com.mx/una-trilogia-rural-bodas-de-sangre-yerma-y-la-casa-de-bernarda-alba-1" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="Fantasia">
+            <h3 id="misterio r">Misterio</h3>
+            <ul>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/1.Mi.jpg" class="card-img-top" alt="Quien pierde paga - Stephen King">
+                        <div class="card-body">
+                            <h5 class="card-title">Quien pierde paga</h5>
+                            <p class="card-text"> Quien pierde paga, una obra maestra de la intriga sobre un lector cuya obsesión por un escritor va demasiado lejos.Despierte, genio. Así comienza la fascinante nueva novela de Stephen King sobre un lector fanático. El genio es John Rothstein, un autor de culto y creador del personaje de Jimmy Gold. </p>
+                            <a href="https://www.amazon.com.mx/Quien-Pierde-Paga-Finders-Keepers/dp/0593311604/ref=asc_df_0593311604/?tag=gledskshopmx-20&linkCode=df0&hvadid=629915163570&hvpos=&hvnetw=g&hvrand=13626904147534170514&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9136619&hvtargid=pla-1541483779158&psc=10" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/2.Mi.jpg" class="card-img-top" alt="La desaparición de Stephanie Mailer- Joel Dicker">
+                        <div class="card-body">
+                            <h5 class="card-title">La desaparición de Stephanie Mailer</h5>
+                            <p class="card-text"> Así se inicia este colosal thriller que avanza en el pasado y el presente a ritmo vertiginoso, sumando tramas, personajes, sorpresas y vueltas de tuerca, sacudiendo e impulsando al lector sin freno posible hacia el inesperado e inolvidable desenlace.La noche del 30 de julio de 1994 la apacible población de Orphea, en los Hamptons, asiste a la gran apertura del festival de teatro.
+                            </p>
+                            <a href="https://www.amazon.com.mx/desaparici%C3%B3n-Stephanie-Mailer-Jo%C3%ABl-Dicker/dp/6073168918/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=EBIHL19C73KZ&keywords=La+desaparici%C3%B3n+de+Stephanie+Mailer&qid=1698104913&s=books&sprefix=la+desaparici%C3%B3n+de+stephanie+mailer%2Cstripbooks%2C111&sr=1-1&ufe=app_do%3Aamzn1.fos.4e545b5e-1d45-498b-8193-a253464ffa47" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/3.Mi.jpg" class="card-img-top" alt="Los Chamanes de México">
+                        <div class="card-body">
+                            <h5 class="card-title">Los Chamanes de México</h5><p> Barbara Guerrero (Pachita) nacho en 1900 en Parral y se convirtió en una de las más grandes chamanes de la historia de la humanidad. Sus capacidades curativas le permitían realizar verdaderas hazañas terapéuticas. Realizaba operaciones quirúrgicas ayudada de un cuchillo de monte y de un poder casi total sobre la materia y la energía.
+                            </p>
+                            <a href="https://www.amazon.com.mx/Los-Chamanes-M%C3%A9xico-III-Spanish/dp/B08JF5KSGC" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="./images/4.Mi.jpg" class="card-img-top" alt="La paciente silenciosa">
+                        <div class="card-body">
+                            <h5 class="card-title">La paciente silenciosa</h5>
+                            <p class="card-text">SOLO ELLA SABE LO QUE SUCEDIÓ. SOLO YO PUEDO HACERLA HABLAR. Alicia Berenson, una pintora de éxito, dispara cinco tiros en la cabeza de su marido, y no vuelve a hablar nunca más. Su negativa a emitir palabra alguna convierte una tragedia doméstica en un misterio que atrapa la imaginación de toda Inglaterra. Theo Faber, un ambicioso psicoterapeuta forense obsesionado con el caso.
+                            </p>
+                            <a href="https://www.amazon.com.mx/paciente-silenciosa-Alex-Michaelides/dp/6073805845" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="Fantasia">
+            <h3 id="#man_com r">Mangas y Cómics</h3>
+            <ul>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/1.Ma.png" class="card-img-top" alt="ATAQUE A LOS TITANES">
+                        <div class="card-body">
+                            <h5 class="card-title">ATAQUE A LOS TITANES</h5>
+                            <p class="card-text"> La raza humana, antaño dueña del mundo, se enfrenta a la extinción a manos de los titanes, gigantescos monstruos de inteligencia limitada que cazan y devoran personas por diversión. Los supervivientes se hacinan e intentan sobrevivir en una pequeña ciudad… pero algunos ya están hartos: ¡van a atacar! </p>
+                            <a href="https://www.mercadolibre.com.mx/shingeki-no-kyojin-attack-on-titan-tomo-n-1-manga-espanol/p/MLM21538778?matt_tool=28238160&utm_source=google_shopping&utm_medium=organic&from=gshop" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/2.Ma.jpg" class="card-img-top" alt="Chain Saw Man">
+                        <div class="card-body">
+                            <h5 class="card-title">Chain Saw Man</h5>
+                            <p class="card-text"> Denji es un chico huérfano y pobre que trabaja como devil hunter junto con Pochita, el demonio perruno de la motosierra, para unos yakuza. Estos también desean el poder de los demonios y atacan a Denji y a Pochita, pero, al borde de la muerte, los dos se unen para formar a Chainsaw Man y logran salvarse. Makima, una devil hunter de Seguridad Pública, llega a la escena y recluta a Denji para que trabaje para ella. 
+                            </p>
+                            <a href="https://www.amazon.com.mx/Chain-Saw-Man-Tatsuki-Fujimoto/dp/6075682899/ref=asc_df_6075682899/?tag=gledskshopmx-20&linkCode=df0&hvadid=360663215656&hvpos=&hvnetw=g&hvrand=3347632556444164380&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9136619&hvtargid=pla-1483123710637&psc=1" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="/images/3.Ma.jpg" class="card-img-top" alt="Nana">
+                        <div class="card-body">
+                            <h5 class="card-title">Nana</h5><p> ¡Un encuentro casual en un tren a Tokio envía a dos chicas llamadas Nana a un rumbo de colisión con el destino!
+                            Nana "Hachi" Komatsu espera que mudarse a Tokio le ayude a tener un comienzo limpio y dejar atrás su caprichosa vida amorosa. Nana Osaki, que llega a la ciudad al mismo tiempo, tiene planes de triunfar en el mundo del rock'n'roll.
+                            </p>
+                            <a href="https://www.amazon.com.mx/Nana-Vol-1-Ai-Yazawa/dp/1421501082/ref=asc_df_1421501082/?tag=gledskshopmx-20&linkCode=df0&hvadid=325299251647&hvpos=&hvnetw=g&hvrand=5651390930572442059&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9136619&hvtargid=pla-487364634387&psc=1" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card" style="width: 18rem; height: 47rem;">
+                        <img src="./images/4.Ma.jpg" class="card-img-top" alt="Tomo-chan is a Girl!">
+                        <div class="card-body">
+                            <h5 class="card-title">Tomo-chan is a Girl!</h5>
+                            <p class="card-text">“¡DÉJAME UNIRME AL DOJO DE AIZAWA!” Misaki es el capitán del club de karate masculino, pero todavía no es rival para Tomo o Jun. Cuando se siente incapaz de proteger a su prometida Carol, se une al dojo familiar de Tomo para hacerse más fuerte. Mientras Misaki lucha, Tomo y Jun tienen una cita para ver los fuegos artificiales. ¿Tomo finalmente logrará que Jun la vea como una niña, o su verano terminará con un gemido?
+                            </p>
+                            <a href="https://www.amazon.com.mx/Tomo-Chan-Girl-Vol-Fumita-Yanagida/dp/1642757144?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A39OT73XNA1NJI" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Conseguir</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--link a otro sitio -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="Reco">
+                    <h5>Puedes encontrar más libros aquí!: </h5>
+                    <a href="https://elestanteliterario.com/category/libros/resenas/" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Lee más aquí</a>
+                </div>
+            </div>
+            <!--FORMULARIOS-->
+            <div class="col-md-6">
+                <h5>Dejanos tus comentarios: </h5>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Ingresa tu correo</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Comentarios: </label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="En_B"><button type="button" class="btn btn-dark">Enviar</button></div>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
